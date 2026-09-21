@@ -1,10 +1,18 @@
 /* Find fejlen i isOdd-metoden */
 
 void main() {
-    IO.println("Tallet 3 er ulige: " + isOdd(3));
-    IO.println("Tallet 4 er lige: " + isOdd(4));
+    IO.println(isOdd(3));
+    IO.println(isOdd(4));
+    IO.println(isOdd(13));
 }
 
 boolean isOdd(int number) {
-    return number / 2 == 1;
+    if (number % 2 != 0) {
+        IO.println("Tallet: " + number + " er ulige");
+        return true;
+    }else if (number % 2 == 0){
+        IO.println("Tallet: " + number + " er lige");
+        return true;
+    }
+    return false;
 }
