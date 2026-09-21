@@ -2,12 +2,13 @@
 
 void main() {
     IO.println(isPositive(-5));
+    IO.println(isPositive(10));
+    IO.println(isPositive(0));
+
+
+
 }
 
 boolean isPositive(int number) {
-    if (number > 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return number > 0;
 }
